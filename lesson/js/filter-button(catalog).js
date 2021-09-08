@@ -4,10 +4,8 @@ window.addEventListener('DOMContentLoaded',function(){
     let button_open_menu = document.getElementById("filter-open")
     let open_menu_inside = document.getElementsByClassName("text-open-filter");
     let open_inside = document.getElementsByClassName("filter-category-open");
-    let slide_cont = document.getElementById("catalog");
     let opa = 0;
     let choose;
-    let slide = 0;
     button_menu.onclick = function(){
             let timerId = setInterval(() => {
                 menu_visible.style.display = "flex";

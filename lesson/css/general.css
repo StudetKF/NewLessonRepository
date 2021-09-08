@@ -5,7 +5,7 @@
 body::-webkit-scrollbar {
     width: 12px;               /* ширина scrollbar */
 }
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track-piece {
     background: rgb(255, 255, 255);        /* цвет дорожки */
 }
 body::-webkit-scrollbar-thumb {
@@ -13,6 +13,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;       /* закругления плашки */
     border: 3px solid white;  /* padding вокруг плашки */
 }
+.scroller {
+    overflow-y: scroll;
+    scrollbar-color: #0A4C95 #C2D2E4;
+  }
 header{
     width: 100%;
     height: fit-content;
@@ -34,11 +38,13 @@ header{
 .head-li-1{
     width: 44px;
     height: 38px;
-    background-image: url("../img/head-logo.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
-.head-but-2, .head-but-3, .head-but-4, .head-but-5{
+.head-but-1{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/head-logo.svg");
+}
+.head-but-2, .head-but-3, .head-but-4, .head-but-5, .head-but-1{
     background-color: inherit;
     border: 0;
     background-size: contain;
@@ -87,8 +93,9 @@ header{
     background-image: url("../img/footer.png");
     width: 100%;
     height: fit-content;
-    background-size: unset;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: top;
 }
 .foot-gradient{
     background: rgba(244, 244, 244, 0.7);
@@ -351,6 +358,20 @@ header{
     margin-right: 14.4%;
     box-sizing: border-box;
 }
+.mobile-but-cont{
+    display: none;
+}
+@-moz-document url-prefix(){
+    .email{
+        padding-top: 15px;
+    }
+    .email::-moz-focus-inner {
+        border: 0;
+      }
+      .email-button{
+          padding-left: 0;
+      }
+}
 @media screen and (max-width: 769px), (max-width:800px) and (min-width:769px) and (max-height:426px) {
     .container-general{
         margin: 0 2%;
@@ -420,7 +441,31 @@ header{
         margin-top: 43px;
         margin-bottom: 0;
     }
+    .menu-but{
+        top: 28px;
+        right: 30px;
+    }
+    .mobile-but-cont{
+        position: absolute;
+        display: inline-block;
+        right: 10px;
+        top: 70px;
+        background-color: #222;
+        width: 50px;
+        height: 105px;
+        border-radius: 15px;
+    }
+    .mobile-head-1{
+        margin-right: auto;
+        margin-left: 10px;
+    }
+    .mobile-head-2{
+        margin-right: auto;
+        margin-left: 7px;
+        margin-top: 16px;
+    }
 }
+
 @media screen and (max-width:1050px) and (min-width:769px) {
     .subscribe-cont{
         margin-left: 3%;
@@ -431,9 +476,15 @@ header{
     .email-button{
         padding-left: 10px;
     }
+    
 }
 @media screen and (max-width:320px) {
     .email-button{
         padding-left: 5px;
+    }
+}
+@-moz-document url-prefix() {
+    .email-button{
+        padding-left: 0;
     }
 }

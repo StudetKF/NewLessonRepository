@@ -9,6 +9,9 @@ window.addEventListener('DOMContentLoaded',function(){
     let LabelMT = 0;
     let menu_list = document.getElementsByClassName("menu-li");
     let menu_h5 = document.getElementsByClassName("menu-h5")
+    let head_but_4 = document.getElementsByClassName("head-but-4");
+    let head_but_5 = document.getElementsByClassName("head-but-5");
+    let head_but_1 = document.getElementsByClassName("head-but-1");
     button_menu.onclick = function(){
         let timerId = setInterval(() => {
             menu_visible.style.display = "block";
@@ -114,5 +117,20 @@ window.addEventListener('DOMContentLoaded',function(){
             menuUlCont.style.display = "block";
             menuUlCont.style.justifyContent = "none";
         }
+    }
+    head_but_4[0].onclick = function(){
+        document.location.href = "registration.html"
+    }
+    head_but_4[1].onclick = function(){
+        document.location.href = "registration.html"
+    }
+    head_but_5[0].onclick = function(){
+        document.location.href = "cart.html"
+    }
+    head_but_5[1].onclick = function(){
+        document.location.href = "cart.html"
+    }
+    head_but_1[0].onclick = function(){
+        document.location.href = "index.html"
     }
 });
