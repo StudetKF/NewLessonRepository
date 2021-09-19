@@ -1,0 +1,133 @@
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid white; 
+}
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.temp{
+    width: 62vw;
+    margin: 40px;
+    padding: 10px;
+    margin-right: calc(3vw - 5px);
+    box-sizing: border-box;
+}
+.sub{
+    width: 5vw;
+    padding: 10px;
+    max-height: 40px;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+.count{
+    width: 70vw;
+    height: 40px;
+    font-size: 15px;
+    background-color: #fff;
+    border: 1px solid black;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.count-first, .temp{
+    margin-left: 5vw;
+}
+.ex{
+    margin: 10vw;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border: 3px solid black;
+    padding-bottom: 40px;
+    display: none;
+    opacity: 0;
+}
+.ex-text{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 0;
+    max-width: 50vw;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.stars{
+    text-align: left;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    max-width: auto;
+    margin-left: 40%;
+}
+.stars:first-child{
+    margin-top: 40px;
+}
+.count-list{
+    border: 3px solid black;
+    width: 70vw;
+    margin-left: 5vw;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    overflow:hidden;
+}
+.basket-list{
+    width: 60%;
+    max-width: 60%;
+    height: 100%;
+    padding: 10px 40px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.basket{
+    max-width: 50%;
+}
+.cell{
+    width: calc(40% - 3px);
+    max-width: 40%;
+    height: 100%;
+    padding: 10px 40px;
+    margin: 0;
+    box-sizing: border-box;
+}
+h3{
+    font-size: 15px;
+    text-align: center;
+}
+.b-text{
+    margin-top: 10px;
+    font-size: 13px;
+}
+.clear{
+    margin-bottom: 0;
+}
+.cep-line{
+    width: 2px;
+    height: auto;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    background-color: black;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
