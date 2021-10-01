@@ -1,0 +1,134 @@
+.black-quard{
+    background-color: #633A34;
+}
+.white-quard{
+    background-color: #C19A6B;
+}
+.black-quard, .white-quard, .figure{
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    margin-top: 20px;
+}
+.chess-board{
+    width: 40vw;
+    height: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    
+}
+.abc-col{
+    width: calc(40vw / 8);
+    height: 30px;
+    border: 1px solid black;
+    padding-left: auto;
+    padding-right: auto;
+}
+.num-col{
+    height: calc(40vw / 8);
+    width: 30px;
+    border: 1px solid black;
+    padding-left: auto;
+    padding-right: auto;
+}
+.figure-board{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+    height: inherit;
+}
+.abc-cont{
+    display: flex;
+    flex-direction: column;
+    width: calc(40vw + 60px);
+    height: calc(40vw + 60px);
+    border: 2px solid black;
+    margin-right: auto;
+    margin-left: auto;
+}
+.abc{
+    width: 40vw;
+    margin-left: 30px;
+    height: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    box-sizing:border-box;
+}
+.num-cont{
+    width: inherit;
+    height: 40vw;
+    display: flex;
+    box-sizing:border-box;
+}
+.num{
+    width: 30px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    box-sizing:border-box;
+    text-align: center;
+}
+.numbers{
+    width: 100%;
+    min-height: calc(100% / 8);
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    font-style: italic;
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 50%;
+}
+.abcs{
+    width: calc(40vw / 8);
+    min-height: 100%;
+    border-right: 2px solid black;
+    font-style: 20px;
+    font-style: italic;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    background-image: url('../img/Pawn.svg');
+}
+.figure{
+    background-size:cover;
+    background-position: center;
+    z-index: 100;
+    background-repeat: no-repeat;
+}
+.horse{
+    background-size: 60%;
+}
+.king{
+    background-size: 40%;
+}
+.num-l{
+    padding-left: 30%;
+    text-align: left;
+    border-right: 0;
+    border-left: 2px solid #000;
+}
+.abc-l{
+    padding-top: 1%;
+    border-top: 2px solid #000;
+}
+.num2{
+    border-right: 0;
+}
+.abc2{
+    border-bottom: 0;
+}
