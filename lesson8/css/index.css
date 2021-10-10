@@ -1,0 +1,58 @@
+.quard{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+}
+.snake-board{
+    width: fit-content;
+    height: fit-content;
+    border: 10px solid green;
+    background-color: grey;
+}
+.snake{
+    background-color: #fff;
+}
+.apple{
+    background-image: url("../img/2735876-4caf50.svg");
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.wall{
+    background-color: red;
+}
+.cont{
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.container{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-top: 1vw;
+}
+.start, .score{
+    width: 10vw;
+    height: 3vw;
+    border: 2px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+.start{
+    margin-right: 3vw;
+    margin-bottom: 2vw;
+}
+.score{
+    margin-bottom: 3vw;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: fit-content;
+    box-sizing: border-box;
+}
