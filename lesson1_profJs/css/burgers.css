@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: black;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    cursor: pointer;
+    font-weight: normal;
+}
+.burgers, .fillings, .pluses, .ok{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    border: 3px solid grey;
+    margin: 0 6vw;
+    padding: 3vw 4vw;
+}
+.ok{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.burger, .filling, .plus{
+    border: 2px solid black;
+    margin: 0 10px;
+    width: 19%;
+    height: auto;
+    border-radius: 5px;
+}
+.img{
+    height: 15vw;
+    width: 100%;
+    background-color:gray;
+}
+.text-cont{
+    padding: 10px 20px;    
+    box-sizing: border-box;
+}
+.but-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.buy{
+    background-color: #fff;
+    border: 2px solid black;
+    margin: 10px 0 0;
+    width: fit-content;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+h3, p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-size: 15px;
+}
+.fillings, .ok, .pluses{
+    display: none;
+}
+.name-price{
+    padding: 20px 50px;
+    height: fit-content;
+    margin: 15px 6vw;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.name, .count{
+    font-size: 25px;
+}
+.ok1{
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 20px 5vw;
+    width: 40vw;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cart{
+    display: none;
+}
+.all-price{
+    width: fit-content;
+    padding: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 40px auto;
+}
+h2:first-child{
+    margin-bottom: 10px;
+}
+th,td{
+    border: 2px solid black;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    padding: 10px 20px;
+}
+.table-cont{
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0 5vw;
+    width: 90vw;
+}
+th{
+    font-size: 20px;
+    background-color: black;
+    color:white;
+    border: 2px solid white;
+    font-weight: normal;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+th:first-child{
+    border-left: 2px solid black;
+}
+th:last-child{
+    border-right: 2px solid black;
+}
+tr:hover {background-color:honeydew;}
+.clear{
+    border: 2px solid black;
+    background-color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px 40px;
+    margin: 0 auto 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}

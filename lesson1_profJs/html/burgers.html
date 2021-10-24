@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson2+</title>
+    <script src="../js/burgers.js"></script>
+    <link rel="stylesheet" href="../css/burgers.css">
+</head>
+<body>
+    <header><h1 class="main-but">Главная</h1><h1 class="cart-but">Корзина</h1></header>
+    <main>
+        <div class="main">
+            <div class="name-price"><p class="name"></p><p class="count"></p></div>
+            <div class="burgers"></div>
+            <div class="fillings"></div>
+            <div class="pluses"></div>
+            <div class="ok">
+                <button class="ok1" id="main">Продолжить покупки</button>
+                <button class="ok1" id="Cart">Перейти к корзине</button>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="table-cont">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Размер</th>
+                            <th>Начинка</th>
+                            <th>Добавка</th>
+                            <th>Калорийность</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-table"></tbody>
+                </table>
+            </div>
+            <div class="all-price">
+                <h2 id="price"></h2>
+                <h2 id="cal"></h2>
+            </div>
+            <div class="but-cont"><button class="clear">Очистить корзину</button></div>
+        </div>
+    </main>
+</body>
+</html>
