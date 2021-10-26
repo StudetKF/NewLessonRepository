@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding: 0;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+h2{
+    margin-bottom: 20px;
+}
+.cart, .products{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:10px;
+}
+.goods-item{
+    margin-bottom: 10px;
+}
